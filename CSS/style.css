@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Navigation bar >> Index.php*/
+header {
+    background-color: #141E27;
+    color: #E0DDAA;
+    padding: 50px;
+    position: fixed;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+header ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+header a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #E0DDAA;
+    border: 2px solid #E0DDAA;
+    padding: 10px 25px;
+    border-radius: 22px;
+    transition: 0.5s;
+}
+
+header a:hover {
+    transition: 0.3s;
+    padding: 10px 35px;
+    background-color: #E0DDAA;
+    color: #000;
+}
+
+/*Home Section  >> Index.php*/
+#home {
+    background-image: url('../IMG/BG.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.heading {
+    padding: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.heading h1 {
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #1155ff;
+}
+
+.heading span {
+    color: #fff87b;
+}
+
+.heading p {
+    color: #fff;
+    width: 60%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Form >> Index.php*/
+::placeholder {
+    color: #fff87b;
+}
+
+#form_popup {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+}
+
+#form_popup form {
+    position: relative;
+    top: 30%;
+    width: 25%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    border-radius: 22px;
+    transition: 0.3s;
+}
+
+#form_popup form p{
+    color: #fff;
+}
+
+#form_popup form p a{
+    color: #fff87b;
+    cursor: pointer;
+}
+
+.FormCloseBtn{
+    background: transparent;
+    border: none;
+    color: #fff87b;
+    font-size: larger;
+    cursor: pointer;
+}
+
+#form_popup form input[type=text],
+input[type=password] {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #fff87b;
+    outline: none;
+    color: #fffba7;
+    font-size: large;
+}
+
+#form_popup form input[type=submit] {
+    cursor: pointer;
+    padding: 10px 25px;
+    border: none;
+    background: transparent;
+    border: 2px solid #fff87b;
+    outline: none;
+    border-radius: 22px;
+    color: #fffba7;
+}
+
+#form_popup form input[type=submit]:hover {
+    transition: 0.3s;
+    padding: 10px 35px;
+    background-color: #fff87b;
+    color: #000;
+}
+
+/*Conatiner >> index.php*/
+#container {
+    background-image: url('../IMG/BG02.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cont_heading {
+    padding: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cont_heading a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #141E27;
+    background-color: #E0DDAA;
+    padding: 10px 20px;
+    border-radius: 22px;
+    transition: 0.3s;
+}
+
+.cont_heading a:hover {
+    transition: 0.3s;
+    padding: 10px 30px;
+}
+
+/*Footer*/
+footer {
+    background-color: #141E27;
+    color: #E0DDAA;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Aboutus.php*/
+#about{
+    background-image: url('../IMG/about.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+#about .content{
+    padding: 200px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*Signup.php*/
+#signup{
+    background-image: url('../IMG/signup.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+#signup .signupbox{
+    padding: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#signup form input[type=text],
+input[type=password],input[type=email] {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #fff87b;
+    outline: none;
+    color: #fffba7;
+    font-size: large; 
+}
+
+#signup form input[type=submit] {
+    cursor: pointer;
+    padding: 10px 25px;
+    border: none;
+    background: transparent;
+    border: 2px solid #fff87b;
+    outline: none;
+    border-radius: 22px;
+    color: #fffba7;
+    font-size: large; 
+}
+
+#signup form input[type=submit]:hover {
+    transition: 0.3s;
+    padding: 10px 35px;
+    background-color: #fff87b;
+    color: #000;
+}
+
+/*Dashboard.php*/
+#welcome{
+    background-color: #1155ff;
+    color: #fff;
+    padding: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+/* Demat.php */
+.info
+{
+    background-color: #E0DDAA;
+}
+
+/* Plan.php */
+.bd
+{
+    background-color: #E0DDAA;
+}
+.plan1 hr
+{
+    width: 40%;
+
+    transition: 0.6s;
+}
+.plan1 hr:hover
+{
+    cursor: pointer;
+    width: 100%;
+    transition: 0.6s;
+}
+
+/* contact.php */
+
+.mai
+{
+    width: 20px;
+    height: 20px;    
+    
+}
